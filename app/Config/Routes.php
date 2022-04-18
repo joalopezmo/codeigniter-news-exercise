@@ -50,3 +50,8 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 $routes->get('/noticias', 'noticias::index');
+$routes->get('/noticias/crear', 'noticias::crear');
+$routes->post('save', 'noticias::save');
+$routes->get('/noticias/{id}', 'noticias::show');
+//$routes->get('/noticias/{id}/editar', 'noticias::editar');
+$routes->post('/noticias/eliminar/{id}', 'noticias::eliminar');

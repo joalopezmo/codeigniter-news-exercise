@@ -6,8 +6,8 @@ class NoticiasModel extends Model
 {
 protected $table = 'noticia';
 protected $primaryKey = 'id';
-protected $allowedFields = ['title', 'autor', 'image'];
-
+protected $allowedFields = ['title', 'autor', 'image', 'content', 'publication_date', 'category'];
 }
+
 
 
