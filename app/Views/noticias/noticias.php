@@ -1,6 +1,8 @@
 <?=$header?>
     <h1>Noticias</h1>
-    <a href="<?=base_url('noticias/crear')?>">Crear noticia</a>
+    <a href="<?=base_url('noticias/crear')?>" class="btn btn-dark">Crear noticia</a>
+    <br/>
+    <br/>
     <div class="container">
         <table class="table table-light">
             <thead class="thead-light">
@@ -22,8 +24,8 @@
                     <td><?php echo $noticia['publication_date']; ?></td>
                     <td><?php echo $noticia['category']; ?></td>
                     <td>
-                        <a href="<?=base_url('noticias/editar/'.$noticia['id'])?>">Editar</a>
-                        <a href="<?=base_url('noticias/eliminar/'.$noticia['id'])?>">Eliminar</a>
+                        <a href="<?=base_url('noticias/editar/'.$noticia['id'])?>" class="btn btn-warning">Editar</a>
+                        <a href="<?=base_url('noticias/eliminar/'.$noticia['id'])?>" class="btn btn-danger">Eliminar</a>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
