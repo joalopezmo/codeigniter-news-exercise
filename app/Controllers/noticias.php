@@ -3,8 +3,11 @@ namespace App\Controllers;
 
 use Codeigniter\Controller;
 use App\Models\NoticiasModel;
+use CodeIgniter\RESTful\ResourceController;
+
 class Noticias extends BaseController
 {
+
     public function index()
     {
         $model = new NoticiasModel();
@@ -92,6 +95,13 @@ class Noticias extends BaseController
         
     
         return redirect()->to(base_url('noticias'));
+    }
+
+    public function view($id=null){
+        $model['noticia'] = $this->post_model->get_post($id);
+        $model['header'] = view('template/header');
+        $model['footer'] = view('template/footer');
+        return view('noticias/view', $model);
     }
 
 

@@ -37,10 +37,10 @@
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
+# database.default.hostname = 127.0.0.1
+# database.default.database = joalopezmo
+# database.default.username = joalopezmo
+# database.default.password = gDKvdVAC
 # database.default.DBDriver = MySQLi
 # database.default.DBPrefix =
 
